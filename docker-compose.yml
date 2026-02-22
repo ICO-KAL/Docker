@@ -2,6 +2,6 @@ services:
   web:
     image: nginx:alpine
     ports:
-      - "80:80"
+      - "80:80" # no necesita poner puerto la ruta principal esta en el index.html
     volumes:
       - ./src:/usr/share/nginx/html:ro
